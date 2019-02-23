@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController {
+class CharactersViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     var characters = CharacterStore().chars
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

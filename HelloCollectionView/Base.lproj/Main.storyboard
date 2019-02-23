@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Characters View Controller-->
         <scene sceneID="HMg-oT-e8A">
             <objects>
-                <collectionViewController id="iiS-sz-Eh5" customClass="ViewController" customModule="HelloCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="iiS-sz-Eh5" customClass="CharactersViewController" customModule="HelloCollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bFu-Uz-N18">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,23 +73,30 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUZ-Jd-4pc">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZj-v3-eQT">
-                                        <rect key="frame" x="0.0" y="295" width="375" height="154"/>
+                                        <rect key="frame" x="0.0" y="235" width="375" height="122.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csF-bQ-gE6">
-                                        <rect key="frame" x="0.0" y="449" width="375" height="154"/>
+                                        <rect key="frame" x="0.0" y="357.5" width="375" height="123"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRd-Qt-9xy">
+                                        <rect key="frame" x="0.0" y="480.5" width="375" height="122.5"/>
+                                        <state key="normal" title="Read aloud"/>
+                                        <connections>
+                                            <action selector="readAloudTapped:" destination="MoV-On-V8t" eventType="touchUpInside" id="jmn-Ub-Dlc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="xZj-v3-eQT" firstAttribute="centerX" secondItem="vhN-c5-KHy" secondAttribute="centerX" id="P9u-KF-eQZ"/>
