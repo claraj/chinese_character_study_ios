@@ -18,7 +18,7 @@ class TranslationViewController: UIViewController {
     @IBOutlet var englishTranslation: UILabel!
     
     let sythesizer = AVSpeechSynthesizer()
-    let voice = AVSpeechSynthesisVoice(language: "zh-CN")  // Chinese
+    let voice = AVSpeechSynthesisVoice(language: "zh-CN")  // System's Chinese voice
     
     override  func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -32,7 +32,6 @@ class TranslationViewController: UIViewController {
         let audio = AVSpeechUtterance(string: char.chineseCharacter)
         audio.voice = voice
         sythesizer.speak(audio)
-    
     }
     
 }

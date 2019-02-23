@@ -12,13 +12,8 @@ class ViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      //  characters = CharacterStore().chars
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
-   // @IBOutlet var cell: CharacterCell!
-    
-
     var characters = CharacterStore().chars
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -37,20 +32,13 @@ class ViewController: UICollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "translation" {
             
             let destination = segue.destination as! TranslationViewController
             let itemRow = collectionView.indexPathsForSelectedItems?.first!.row
             destination.char = characters[itemRow!]
-            
-            
         }
-        
     }
-    
-    
-    
 
 }
 
